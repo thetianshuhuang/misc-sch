@@ -389,11 +389,9 @@ general purpose rectifier, 1 A</description>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1"/>
 <part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4728" device="" package3d_urn="urn:adsk.eagle:package:43341/1"/>
 <part name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4728" device="" package3d_urn="urn:adsk.eagle:package:43341/1"/>
-<part name="D4" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4728" device="" package3d_urn="urn:adsk.eagle:package:43341/1"/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
 <part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -403,17 +401,15 @@ general purpose rectifier, 1 A</description>
 <plain>
 </plain>
 <instances>
-<instance part="D1" gate="1" x="10.16" y="55.88"/>
-<instance part="D2" gate="1" x="10.16" y="45.72" rot="R90"/>
-<instance part="D3" gate="1" x="22.86" y="45.72" rot="R90"/>
-<instance part="D4" gate="1" x="35.56" y="48.26" rot="R90"/>
+<instance part="D1" gate="1" x="20.32" y="55.88"/>
+<instance part="D2" gate="1" x="12.7" y="45.72" rot="R90"/>
+<instance part="D3" gate="1" x="30.48" y="45.72" rot="R90"/>
 <instance part="JP1" gate="A" x="-12.7" y="53.34" rot="R180"/>
 <instance part="JP2" gate="A" x="58.42" y="50.8"/>
 <instance part="GND1" gate="1" x="48.26" y="38.1"/>
-<instance part="GND2" gate="1" x="35.56" y="38.1"/>
 <instance part="GND3" gate="1" x="-2.54" y="38.1"/>
-<instance part="GND4" gate="1" x="22.86" y="38.1"/>
-<instance part="GND5" gate="1" x="10.16" y="38.1"/>
+<instance part="GND4" gate="1" x="30.48" y="38.1"/>
+<instance part="GND5" gate="1" x="12.7" y="38.1"/>
 </instances>
 <busses>
 </busses>
@@ -422,18 +418,14 @@ general purpose rectifier, 1 A</description>
 <segment>
 <pinref part="JP1" gate="A" pin="4"/>
 <pinref part="D1" gate="1" pin="A"/>
-<wire x1="-10.16" y1="55.88" x2="7.62" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="55.88" x2="17.78" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="D1" gate="1" pin="C"/>
 <pinref part="JP2" gate="A" pin="1"/>
-<wire x1="12.7" y1="55.88" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="D4" gate="1" pin="C"/>
-<wire x1="35.56" y1="55.88" x2="55.88" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="55.88" x2="35.56" y2="50.8" width="0.1524" layer="91"/>
-<junction x="35.56" y="55.88"/>
+<wire x1="22.86" y1="55.88" x2="55.88" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -444,11 +436,6 @@ general purpose rectifier, 1 A</description>
 <pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="D4" gate="1" pin="A"/>
-<wire x1="35.56" y1="45.72" x2="35.56" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="JP1" gate="A" pin="1"/>
 <wire x1="-10.16" y1="48.26" x2="-2.54" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="48.26" x2="-2.54" y2="40.64" width="0.1524" layer="91"/>
@@ -457,34 +444,34 @@ general purpose rectifier, 1 A</description>
 <segment>
 <pinref part="D2" gate="1" pin="A"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="10.16" y1="43.18" x2="10.16" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="43.18" x2="12.7" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="D3" gate="1" pin="A"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="22.86" y1="43.18" x2="22.86" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="43.18" x2="30.48" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="3"/>
 <pinref part="JP2" gate="A" pin="2"/>
-<wire x1="-10.16" y1="53.34" x2="22.86" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="53.34" x2="30.48" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="D3" gate="1" pin="C"/>
-<wire x1="22.86" y1="53.34" x2="55.88" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="48.26" x2="22.86" y2="53.34" width="0.1524" layer="91"/>
-<junction x="22.86" y="53.34"/>
+<wire x1="30.48" y1="53.34" x2="55.88" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="48.26" x2="30.48" y2="53.34" width="0.1524" layer="91"/>
+<junction x="30.48" y="53.34"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="2"/>
 <pinref part="JP2" gate="A" pin="3"/>
-<wire x1="-10.16" y1="50.8" x2="10.16" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="50.8" x2="12.7" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="D2" gate="1" pin="C"/>
-<wire x1="10.16" y1="50.8" x2="55.88" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="48.26" x2="10.16" y2="50.8" width="0.1524" layer="91"/>
-<junction x="10.16" y="50.8"/>
+<wire x1="12.7" y1="50.8" x2="55.88" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="48.26" x2="12.7" y2="50.8" width="0.1524" layer="91"/>
+<junction x="12.7" y="50.8"/>
 </segment>
 </net>
 </nets>
