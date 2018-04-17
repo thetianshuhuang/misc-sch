@@ -777,9 +777,9 @@ temperature compensated, 6,2 V</description>
 <wire x1="15.24" y1="53.34" x2="15.24" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="D-"/>
-<wire x1="-15.24" y1="50.8" x2="-2.54" y2="50.8" width="0.1524" layer="91"/>
-<label x="-10.16" y="50.8" size="1.778" layer="95"/>
+<pinref part="J1" gate="G$1" pin="D+"/>
+<wire x1="-15.24" y1="48.26" x2="-2.54" y2="48.26" width="0.1524" layer="91"/>
+<label x="-10.16" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D+" class="0">
@@ -791,9 +791,9 @@ temperature compensated, 6,2 V</description>
 <wire x1="22.86" y1="48.26" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="D+"/>
-<wire x1="-15.24" y1="48.26" x2="-2.54" y2="48.26" width="0.1524" layer="91"/>
-<label x="-10.16" y="48.26" size="1.778" layer="95"/>
+<pinref part="J1" gate="G$1" pin="D-"/>
+<wire x1="-15.24" y1="50.8" x2="-2.54" y2="50.8" width="0.1524" layer="91"/>
+<label x="-10.16" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
