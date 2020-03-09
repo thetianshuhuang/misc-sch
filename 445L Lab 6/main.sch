@@ -17133,6 +17133,65 @@ grid 2.54 mm, diameter 6 mm</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="lab_6">
+<packages>
+<package name="DIP-8">
+<pad name="2A" x="-3.81" y="1.27" drill="1.016" diameter="1.778"/>
+<pad name="3A" x="-3.81" y="-1.27" drill="1.016" diameter="1.778"/>
+<pad name="1A" x="-3.81" y="3.81" drill="1.016" diameter="1.778"/>
+<pad name="4A" x="-3.81" y="-3.81" drill="1.016" diameter="1.778"/>
+<pad name="4B" x="3.81" y="-3.81" drill="1.016" diameter="1.778"/>
+<pad name="3B" x="3.81" y="-1.27" drill="1.016" diameter="1.778"/>
+<pad name="2B" x="3.81" y="1.27" drill="1.016" diameter="1.778"/>
+<pad name="1B" x="3.81" y="3.81" drill="1.016" diameter="1.778"/>
+<wire x1="-6.35" y1="6.35" x2="-6.35" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-6.35" x2="6.35" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-6.35" x2="6.35" y2="6.35" width="0.127" layer="21"/>
+<wire x1="6.35" y1="6.35" x2="-6.35" y2="6.35" width="0.127" layer="21"/>
+<text x="-6.35" y="7.62" size="1.27" layer="21">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="DIP8">
+<pin name="1A" x="-91.44" y="5.08" length="middle"/>
+<pin name="2A" x="-91.44" y="0" length="middle"/>
+<pin name="3A" x="-91.44" y="-5.08" length="middle"/>
+<pin name="4A" x="-91.44" y="-10.16" length="middle"/>
+<pin name="1B" x="-66.04" y="5.08" length="middle" rot="R180"/>
+<pin name="2B" x="-66.04" y="0" length="middle" rot="R180"/>
+<pin name="3B" x="-66.04" y="-5.08" length="middle" rot="R180"/>
+<pin name="4B" x="-66.04" y="-10.16" length="middle" rot="R180"/>
+<wire x1="-86.36" y1="7.62" x2="-71.12" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-71.12" y1="7.62" x2="-71.12" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-71.12" y1="-12.7" x2="-86.36" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-86.36" y1="-12.7" x2="-86.36" y2="7.62" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DIP-8">
+<gates>
+<gate name="G$1" symbol="DIP8" x="78.74" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="DIP-8">
+<connects>
+<connect gate="G$1" pin="1A" pad="1A"/>
+<connect gate="G$1" pin="1B" pad="1B"/>
+<connect gate="G$1" pin="2A" pad="2A"/>
+<connect gate="G$1" pin="2B" pad="2B"/>
+<connect gate="G$1" pin="3A" pad="3A"/>
+<connect gate="G$1" pin="3B" pad="3B"/>
+<connect gate="G$1" pin="4A" pad="4A"/>
+<connect gate="G$1" pin="4B" pad="4B"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -17216,6 +17275,7 @@ grid 2.54 mm, diameter 6 mm</description>
 <part name="BTN0" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP1Q" device="" package3d_urn="urn:adsk.eagle:package:15455/1"/>
 <part name="BTN4" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP1Q" device="" package3d_urn="urn:adsk.eagle:package:15455/1"/>
 <part name="X1" library="adafruit" deviceset="XTAL" device="NX8045" value="16MHz"/>
+<part name="U$1" library="lab_6" deviceset="DIP-8" device=""/>
 </parts>
 <sheets>
 <sheet>
